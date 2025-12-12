@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HER LAW – Women’s Legal Rights Platform</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        color: #333;
+    }
+    header {
+        background: #b62059;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    nav {
+        background: #8e1343;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .section {
+        padding: 40px 10%;
+    }
+    h2 {
+        color: #b62059;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .footer {
+        background: #8e1343;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+    button {
+        background: #b62059;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #8e1343;
+    }
+    #contact-form input, #contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>HER LAW</h1>
+    <p>Empowering Women Through Legal Knowledge</p>
+</header>
+
+<nav>
+    <a href="#rights">Know Your Rights</a>
+    <a href="#help">Emergency Help</a>
+    <a href="#lawyers">Find a Lawyer</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="section" id="rights">
+    <h2>Women’s Legal Rights</h2>
+    <p>Every woman deserves to live with dignity, safety, and equal treatment under the law. Explore key rights below:</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Right to Safety</h3>
+            <p>Learn about domestic violence laws, restraining orders, and how to document abuse.</p>
+        </div>
+        <div class="card">
+            <h3>Workplace Rights</h3>
+            <p>Information on discrimination, maternity leave, harassment, and equal pay rights.</p>
+        </div>
+        <div class="card">
+            <h3>Marriage & Family Law</h3>
+            <p>Know your rights regarding divorce, custody, marital property, and child support.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="help">
+    <h2>Emergency Legal Help</h2>
+    <p>If you or someone you know is in immediate danger, use the quick-access button below.</p>
+    <button onclick="alert('Emergency Hotline: 111 / Local Domestic Violence Center: (Your Region)')">
+        Call Emergency Hotline
+    </button>
+</section>
+
+<section class="section" id="lawyers">
+    <h2>Find a Lawyer</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Pro Bono Lawyers</h3>
+            <p>Access free legal support for women in crisis situations.</p>
+        </div>
+        <div class="card">
+            <h3>Family Law Specialists</h3>
+            <p>Connect with certified lawyers for divorce, custody, and abuse cases.</p>
+        </div>
+        <div class="card">
+            <h3>Human Rights Organizations</h3>
+            <p>Verified NGOs and legal aid clinics advocating for women’s rights.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="resources">
+    <h2>Legal Resources & Guides</h2>
+    <ul>
+        <li>How to file a police report</li>
+        <li>How to document abuse legally</li>
+        <li>Steps to get a restraining order</li>
+        <li>How to report workplace harassment</li>
+        <li>List of shelters & support centers</li>
+    </ul>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer class="footer">
+    © 2025 HER LAW. All Rights Reserved.
+</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your message has been received.");
+});
+</script>
+
+</body>
+</html>
